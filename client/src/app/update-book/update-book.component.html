@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Library</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	</head>
+	<body>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1> {{title}}
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+          
+          <!--/stories-->
+            <div class="row">
+                <form #addForm="ngForm" (ngSubmit)="editBook()">
+                    Title <input type="text" name="title" [(ngModel)]="book.title"> <br><br>
+                    Author <input type="text" name="author" [(ngModel)]="book.author"> <br><br>
+                    Genre <input type="text" name="genre" [(ngModel)]="book.genre"> <br><br>
+                    ImageUrl<input type="text" name="imageUrl" [(ngModel)]="book.imageUrl"> <br><br><br>
+                    <input type="submit" class="btn btn-primary" value="Edit" />
+                </form>
+            </div>
+            <hr>
+          <!-- /stories -->
+        
+          
+
+          <a routerLink="/" class="btn btn-primary pull-right btnNext" class="float-right">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+        
+          
+        </div>
+      </div>
+                                                                                       
+	                                                
+                                                      
+   	</div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                
+<hr>
+
+	</body>
+</html>
